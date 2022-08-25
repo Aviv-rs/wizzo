@@ -1,16 +1,25 @@
 .card-preview {
     margin-bottom: 1rem;
-    background-color: lighten($clr1, 15%);
-    border-radius: 4em;
-    gap: 10px;
+    background-color: $clr1;
+    min-height: 400px;
+    max-width: 20vw;
+    border-radius: 20px;
+    transition: box-shadow, .3s;
+    cursor: pointer;
 
-    .card-img {
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
+    &:hover {
+        box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
     }
 
-    .card-info {
-        margin-bottom: 0;
+    .card-img {
+        height: 60%;
+        aspect-ratio: 1;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .card-content {
+        font-size: 1.7vw;
+        letter-spacing: -0.01em;
     }
 }

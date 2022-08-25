@@ -18,3 +18,11 @@
         top: 5px;
     }
 }
+
+@mixin styled-btn($padding: 1rem, $bg: #F3F3F3) {
+    border-radius: 100px;
+    padding: 0.8rem 1rem;
+    padding: $padding;
+    background: $bg;
+    border: none;
+}

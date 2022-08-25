@@ -1,0 +1,27 @@
+.card-list {
+    margin-bottom: 1rem;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+
+        .btn-see-all {
+            @include styled-btn;
+
+            &::after {
+                content: '←';
+                padding-inline-start: 10px;
+            }
+        }
+    }
+
+    .list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        column-gap: 1rem;
+    }
+}
