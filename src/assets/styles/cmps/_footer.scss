@@ -1,0 +1,14 @@
+.app-footer {
+    background-color: $clr6;
+    height: 30vh;
+    padding: 2rem;
+
+    .resources {
+        gap: 3rem;
+        color: $clr1;
+
+        .link-list {
+            gap: 5px;
+        }
+    }
+}

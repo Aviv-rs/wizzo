@@ -1,0 +1,9 @@
+.job-list {
+
+    .job-preview-container:not(:last-child) {
+        .job-preview {
+
+            border-bottom: 1px solid #000;
+        }
+    }
+}
