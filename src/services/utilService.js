@@ -2,7 +2,8 @@ export const utilService = {
     makeId,
     makeLorem,
     getRandomIntInclusive,
-    getTranslation
+    getTranslation,
+    getImageUrl
 }
 
 function getTranslation(term) {
@@ -43,4 +44,9 @@ function getRandomIntInclusive(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive 
+}
+
+function getImageUrl(src) {
+    return new URL(src, import.meta.url)
+        .href
 }

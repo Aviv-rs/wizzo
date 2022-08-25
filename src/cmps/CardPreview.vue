@@ -2,7 +2,7 @@
   <article className="card-preview flex column">
     <img
       className="card-img"
-      :src="`src/assets/imgs/${imgFolder}/` + cardIdx + '.png'"
+      :src="getImgUrl('../assets/imgs/' + imgFolder + '/' + cardIdx + '.png')"
       alt="card image"
     />
     <div class="info-container">
@@ -26,6 +26,11 @@ export default {
     imgFolder: {
       required: true,
       type: String,
+    },
+  },
+  methods: {
+    getImgUrl: function (src) {
+      return new URL(src, import.meta.url).href
     },
   },
 }

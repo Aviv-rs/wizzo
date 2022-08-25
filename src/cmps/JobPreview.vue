@@ -5,7 +5,7 @@
     <div class="job-info-container flex">
       <div class="employer flex align-center">
         <div class="img-container">
-          <img src="src/assets/imgs/jobs/1.png" alt="" />
+          <img src="@/assets/imgs/jobs/1.png" alt="" />
         </div>
         <span>
           {{ job.employer }}
@@ -17,7 +17,7 @@
         class="subfield flex align-center"
       >
         <div class="img-container">
-          <img :src="`src/assets/imgs/jobs/${idx + 2}.svg`" alt="" />
+          <img :src="getImgUrl(`../assets/imgs/jobs/${idx + 2}.svg`)" alt="" />
         </div>
         <span> {{ getTranslation(field[0]) }}: {{ job[field[0]] }} </span>
       </div>
@@ -47,6 +47,9 @@ export default {
   },
   methods: {
     getTranslation: utilService.getTranslation,
+    getImgUrl: function getImageUrl(src) {
+      return new URL(src, import.meta.url).href
+    },
   },
 }
 </script>
