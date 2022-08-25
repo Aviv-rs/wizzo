@@ -1,13 +1,43 @@
 .app-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 5vh;
+    min-height: 5vh;
+    padding: 10px;
 
-    .links {
-        gap: 10px;
+    .logo {
+        margin-inline-end: 2.5rem;
     }
 
-    background-color: lightblue;
-    padding: 10px;
+    .links {
+        gap: 1.75rem;
+
+        .link:first-child {
+            font-weight: bold;
+        }
+    }
+
+    .btn-account {
+        margin-inline-start: auto;
+        background: #F3F3F3;
+        border-radius: 100px;
+        border: none;
+        padding: 0.8rem 1rem;
+        font-size: 1.1rem;
+        gap: 8px;
+
+        .icon {
+            height: 24px;
+            width: 24px;
+            display: inline-block;
+
+            img {
+                object-fit: contain;
+            }
+
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+
 }
