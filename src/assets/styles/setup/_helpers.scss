@@ -35,7 +35,9 @@
 }
 
 // Text
-
+.bold {
+  font-weight: bold;
+}
 
 // Spacers
 .mt-3 {
@@ -56,6 +58,10 @@
 // positions
 .relative {
   position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
 
 // inputs

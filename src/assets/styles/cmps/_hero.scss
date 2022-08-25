@@ -1,0 +1,55 @@
+.hero {
+    grid-template-areas:
+        "hero-img1 main-hero-img"
+        "hero-img2 main-hero-img"
+    ;
+    grid-template-columns: 1fr 6fr;
+    direction: ltr;
+    gap: 1.5rem;
+
+    .main-hero-container {
+        grid-area: main-hero-img;
+
+        .welcome-text-container {
+            direction: rtl;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 3rem;
+
+            h1 {
+                font-size: 4vw;
+                letter-spacing: -0.01em;
+            }
+        }
+
+        .buttons {
+            gap: 1rem;
+
+            * {
+
+                font-size: 1.2vw;
+            }
+
+            .btn-signup {
+                background-color: $clr1;
+                padding: 1rem;
+                border-radius: 100px;
+            }
+
+            .btn-login {
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+    .hero-img1 {
+        grid-area: hero-img1;
+    }
+
+    .hero-img2 {
+        grid-area: hero-img2;
+    }
+}
