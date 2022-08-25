@@ -5,11 +5,21 @@
     padding: 10px;
 
     .logo {
-        margin-inline-end: 2.5rem;
+        margin-inline-end: 1rem;
+
+        @include for-wide-layout {
+
+            margin-inline-end: 2.5rem;
+        }
     }
 
     .links {
-        gap: 1.75rem;
+        gap: 1rem;
+
+        @include for-normal-layout {
+
+            gap: 1.75rem;
+        }
 
         .link:first-child {
             font-weight: bold;

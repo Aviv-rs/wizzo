@@ -1,7 +1,12 @@
 .app-footer {
     background-color: $clr6;
     height: 30vh;
-    padding: 2rem;
+    padding: 1rem;
+
+    @include for-normal-layout {
+
+        padding: 2rem;
+    }
 
     .resources {
         gap: 3rem;
@@ -10,5 +15,10 @@
         .link-list {
             gap: 5px;
         }
+    }
+
+    .logo {
+        max-width: 15vw;
+        aspect-ratio: 1;
     }
 }
