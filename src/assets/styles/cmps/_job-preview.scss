@@ -1,0 +1,30 @@
+.job-preview {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #000;
+
+    .job-info-container {
+        gap: 1.5rem;
+
+        .employer {
+            letter-spacing: -0.01em;
+            gap: 10px;
+
+            .img-container {
+                height: 3rem;
+                width: 3rem;
+                display: inline-block;
+            }
+        }
+
+        .subfield {
+            letter-spacing: -0.01em;
+
+            .img-container {
+                padding-inline-end: 10px;
+            }
+        }
+    }
+
+
+}

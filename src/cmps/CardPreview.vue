@@ -5,8 +5,10 @@
       :src="`src/assets/imgs/${imgFolder}/` + cardIdx + '.png'"
       alt="card image"
     />
-    <time v-if="!!card.time">{{ card.time }}</time>
-    <p class="card-content bold">{{ card.content }}</p>
+    <div class="info-container">
+      <time v-if="!!card.time">{{ card.time }}</time>
+      <p class="card-content bold">{{ card.content }}</p>
+    </div>
   </article>
 </template>
 

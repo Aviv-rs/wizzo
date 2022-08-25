@@ -1,7 +1,21 @@
 export const utilService = {
     makeId,
     makeLorem,
-    getRandomIntInclusive
+    getRandomIntInclusive,
+    getTranslation
+}
+
+function getTranslation(term) {
+    switch (term) {
+        case 'postedAt':
+            return 'פורסם בתאריך'
+        case 'location':
+            return 'מיקום'
+        case 'type':
+            return 'סוג'
+        case 'field':
+            return 'תחום'
+    }
 }
 
 function makeId(length = 6) {
